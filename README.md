@@ -39,8 +39,9 @@ Designed for spontaneous sonic play, live jamming, and creative exploration.
 
 ## 🎨 Credits
 
-Built with love and rhythm by [Chelsea Jay Schoonover](https://www.linkedin.com/in/chelseajs/)  
+Built with love and rhythm by [Chelsea Jay Schoonover](https://www.linkedin.com/in/chelseajayschoonover/)  
 Enid vibes by Pinxit Labs ✨🪐  
 MIT Licensed — remix, expand, and bloom.
+
 
 
