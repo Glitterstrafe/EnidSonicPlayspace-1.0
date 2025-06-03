@@ -1,0 +1,12 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Node / build tools (if added later)
+node_modules/
+dist/
+.env
+
+# Editor config
+.vscode/
+.idea/

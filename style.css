@@ -1,0 +1,46 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: radial-gradient(circle at center, #1b1b2f, #121212);
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.splash {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#grid {
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(8, 60px);
+  grid-template-rows: repeat(8, 60px);
+  gap: 6px;
+  width: max-content;
+}
+
+.pad {
+  width: 60px;
+  height: 60px;
+  background: #333;
+  border: 2px solid #555;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 255, 150, 0.2);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.pad:hover {
+  background: #555;
+  transform: scale(1.05);
+}
+
+.pad.loaded {
+  background: #00ffaa;
+  box-shadow: 0 0 12px #00ffaa;
+}
