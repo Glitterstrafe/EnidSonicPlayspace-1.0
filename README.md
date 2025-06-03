@@ -5,6 +5,7 @@ Load your own audio samples onto an 8x8 pad grid and perform directly in the bro
 
 Designed for spontaneous sonic play, live jamming, and creative exploration.
 
+(vibe coding work in progress: first pass while between GenAi shots at work)
 ---
 
 ## 🎛️ Features
