@@ -65,6 +65,7 @@ MIT Licensed — remix, expand, and bloom.
 - Launchpad LED feedback via MIDI out
 - Windsurf deployment and live performance mode
 
+- [Roadmap and process](ROADMAP_AND_PROCESS.md)
 ---
 
 ## 🎨 Credits
