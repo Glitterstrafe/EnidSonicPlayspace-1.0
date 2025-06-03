@@ -1,40 +1,28 @@
-name: Deploy to GitHub Pages
+name: Deploy to GitHub Pages (branch)
 
 on:
   push:
     branches: [main]
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
+  contents: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
+      - uses: actions/checkout@v3
 
       - name: Build static site
         run: |
           mkdir build
           cp index.html build/
-          cp style.css build/
-          cp script.js build/
+          cp style.css  build/
+          cp script.js  build/
           cp -r assets build/ || true
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+      - name: Publish to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          path: ./build
-
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v2
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
